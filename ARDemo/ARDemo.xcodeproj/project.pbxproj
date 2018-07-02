@@ -19,6 +19,13 @@
 		373D8A0920E5DBCE00CB3165 /* materals.png in Resources */ = {isa = PBXBuildFile; fileRef = 373D8A0820E5DBCE00CB3165 /* materals.png */; };
 		373D8A0C20E5DD0B00CB3165 /* SpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373D8A0B20E5DD0B00CB3165 /* SpriteViewController.m */; };
 		373D8A1120E6099E00CB3165 /* ARImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373D8A1020E6099E00CB3165 /* ARImageViewController.m */; };
+		37E1601520E89F270082CE87 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1601420E89F270082CE87 /* TestViewController.m */; };
+		37F7E96320E76A2A0028B451 /* SceneKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96220E76A2A0028B451 /* SceneKitViewController.m */; };
+		37F7E96620E76A790028B451 /* CBAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96520E76A790028B451 /* CBAction.m */; };
+		37F7E96920E76D770028B451 /* PlaneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96820E76D770028B451 /* PlaneViewController.m */; };
+		37F7E96C20E78A2F0028B451 /* CBNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96B20E78A2F0028B451 /* CBNode.m */; };
+		37F7E96F20E7BB500028B451 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96E20E7BB500028B451 /* VideoPlayer.m */; };
+		37F7E97120E7BE040028B451 /* freeVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 37F7E97020E7BE040028B451 /* freeVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,19 @@
 		373D8A0B20E5DD0B00CB3165 /* SpriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteViewController.m; sourceTree = "<group>"; };
 		373D8A0F20E6099E00CB3165 /* ARImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARImageViewController.h; sourceTree = "<group>"; };
 		373D8A1020E6099E00CB3165 /* ARImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARImageViewController.m; sourceTree = "<group>"; };
+		37E1601320E89F270082CE87 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		37E1601420E89F270082CE87 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		37F7E96120E76A2A0028B451 /* SceneKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneKitViewController.h; sourceTree = "<group>"; };
+		37F7E96220E76A2A0028B451 /* SceneKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneKitViewController.m; sourceTree = "<group>"; };
+		37F7E96420E76A790028B451 /* CBAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAction.h; sourceTree = "<group>"; };
+		37F7E96520E76A790028B451 /* CBAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAction.m; sourceTree = "<group>"; };
+		37F7E96720E76D770028B451 /* PlaneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaneViewController.h; sourceTree = "<group>"; };
+		37F7E96820E76D770028B451 /* PlaneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaneViewController.m; sourceTree = "<group>"; };
+		37F7E96A20E78A2F0028B451 /* CBNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBNode.h; sourceTree = "<group>"; };
+		37F7E96B20E78A2F0028B451 /* CBNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBNode.m; sourceTree = "<group>"; };
+		37F7E96D20E7BB500028B451 /* VideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		37F7E96E20E7BB500028B451 /* VideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		37F7E97020E7BE040028B451 /* freeVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = freeVideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,8 @@
 				373D8A0820E5DBCE00CB3165 /* materals.png */,
 				373D89E320E23C4800CB3165 /* AppDelegate.h */,
 				373D89E420E23C4800CB3165 /* AppDelegate.m */,
+				37F7E96420E76A790028B451 /* CBAction.h */,
+				37F7E96520E76A790028B451 /* CBAction.m */,
 				373D89E620E23C4800CB3165 /* ViewController.h */,
 				373D89E720E23C4800CB3165 /* ViewController.m */,
 				373D89F920E23CE300CB3165 /* FirstViewController.h */,
@@ -87,6 +109,14 @@
 				373D8A0B20E5DD0B00CB3165 /* SpriteViewController.m */,
 				373D8A0F20E6099E00CB3165 /* ARImageViewController.h */,
 				373D8A1020E6099E00CB3165 /* ARImageViewController.m */,
+				37F7E96A20E78A2F0028B451 /* CBNode.h */,
+				37F7E96B20E78A2F0028B451 /* CBNode.m */,
+				37F7E96D20E7BB500028B451 /* VideoPlayer.h */,
+				37F7E96E20E7BB500028B451 /* VideoPlayer.m */,
+				37F7E96120E76A2A0028B451 /* SceneKitViewController.h */,
+				37F7E96220E76A2A0028B451 /* SceneKitViewController.m */,
+				37F7E96720E76D770028B451 /* PlaneViewController.h */,
+				37F7E96820E76D770028B451 /* PlaneViewController.m */,
 				373D8A0120E5D50300CB3165 /* PlaneNode.h */,
 				373D8A0220E5D50300CB3165 /* PlaneNode.m */,
 				373D89FC20E23F5F00CB3165 /* UIView+Addtion.h */,
@@ -95,6 +125,9 @@
 				373D89EE20E23C4900CB3165 /* LaunchScreen.storyboard */,
 				373D89F120E23C4900CB3165 /* Info.plist */,
 				373D89F220E23C4900CB3165 /* main.m */,
+				37F7E97020E7BE040028B451 /* freeVideo.mp4 */,
+				37E1601320E89F270082CE87 /* TestViewController.h */,
+				37E1601420E89F270082CE87 /* TestViewController.m */,
 			);
 			path = ARDemo;
 			sourceTree = "<group>";
@@ -157,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				373D8A0920E5DBCE00CB3165 /* materals.png in Resources */,
+				37F7E97120E7BE040028B451 /* freeVideo.mp4 in Resources */,
 				373D89F020E23C4900CB3165 /* LaunchScreen.storyboard in Resources */,
 				373D8A0720E5DB5300CB3165 /* scene.scn in Resources */,
 				373D89ED20E23C4900CB3165 /* Assets.xcassets in Resources */,
@@ -172,12 +206,18 @@
 			files = (
 				373D89E820E23C4800CB3165 /* ViewController.m in Sources */,
 				373D89F320E23C4900CB3165 /* main.m in Sources */,
+				37E1601520E89F270082CE87 /* TestViewController.m in Sources */,
+				37F7E96620E76A790028B451 /* CBAction.m in Sources */,
 				373D89E520E23C4800CB3165 /* AppDelegate.m in Sources */,
 				373D89FE20E23F5F00CB3165 /* UIView+Addtion.m in Sources */,
 				373D8A0320E5D50300CB3165 /* PlaneNode.m in Sources */,
 				373D89FB20E23CE300CB3165 /* FirstViewController.m in Sources */,
+				37F7E96920E76D770028B451 /* PlaneViewController.m in Sources */,
 				373D8A0C20E5DD0B00CB3165 /* SpriteViewController.m in Sources */,
 				373D8A1120E6099E00CB3165 /* ARImageViewController.m in Sources */,
+				37F7E96C20E78A2F0028B451 /* CBNode.m in Sources */,
+				37F7E96F20E7BB500028B451 /* VideoPlayer.m in Sources */,
+				37F7E96320E76A2A0028B451 /* SceneKitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

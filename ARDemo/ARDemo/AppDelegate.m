@@ -11,6 +11,8 @@
 #import "FirstViewController.h"
 #import "SpriteViewController.h"
 #import "ARImageViewController.h"
+#import "SceneKitViewController.h"
+#import "TestViewController.h"
 
 @interface AppDelegate ()
 
