@@ -8,13 +8,14 @@
 
 #import "ARImageViewController.h"
 #import <ARKit/ARKit.h>
-#import "CBNode.h"
 #import "VideoPlayer.h"
+#import "UIView+DHSmartScreenshot.h"
+#import "CBMovieNode.h"
+#import "CBPlaneNode.h"
 
 @interface ARImageViewController ()<ARSCNViewDelegate>
 
 @property (nonatomic, strong) ARSCNView *scnView;
-@property (nonatomic, strong) ARReferenceImage *referenceImage;
 
 @end
 
@@ -27,6 +28,7 @@
     self.scnView.delegate = self;
     [self.view addSubview:self.scnView];
     self.scnView.scene = [SCNScene new];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -34,11 +36,13 @@
     ARWorldTrackingConfiguration *config = [ARWorldTrackingConfiguration new];
 //    config.detectionImages = [ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
     config.detectionImages = [ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
+//    config.maximumNumberOfTrackedImages = 1;
+//
+//    ARImageTrackingConfiguration *imgConfig = [ARImageTrackingConfiguration new];
+//    imgConfig.trackingImages = config.detectionImages;
+//    imgConfig.maximumNumberOfTrackedImages = 1;
 
-    [self.scnView.session runWithConfiguration:config options:ARSessionRunOptionResetTracking];
-    
-    
-
+    [self.scnView.session runWithConfiguration:config options:ARSessionRunOptionResetTracking | ARSessionRunOptionRemoveExistingAnchors];
 }
 
 - (SCNVector3)positionWithWorldTransform:(matrix_float4x4)worldTransform
@@ -62,50 +66,31 @@
     {
         // 拿到命中测试结果，取出位置
         SCNHitTestResult *result = [resultArray firstObject];
-        NSLog(@"点击：%@",result.node.name);
-//        SCNVector3 vector = [self positionWithWorldTransform:result.worldTransform];
-        
-        // 获取模型场景
-//        SCNScene *scene = [SCNScene sceneNamed:@"scene.scn"];
-//        SCNNode *node = [scene.rootNode clone];
-//        node.position = vector;
-//        
-//        // 添加到根节点中
-//        [self.scnView.scene.rootNode addChildNode:node];
+        if ([result.node isKindOfClass:[CBPlaneNode class]]) {
+            ((CBPlaneNode *)result.node).callback();
+        }
     }
-//    // 显示点击位置
-//
-//    // 搜索节点
-//    [self.scnView hitTest:<#(CGPoint)#> types:<#(ARHitTestResultType)#>]
-//    NSArray <scnn *>* nodes = [self.scnView.scene nodesAtPoint:skPoint];
-//    SKNode *node = nodes.firstObject;
-//    if (node)
-//    {
-//        // 如果能搜索到，则移除
-//        [node removeFromParent];
-//    }else
-//    {
-//        // 搜索不到时，添加一个节点到场景中
-//        ARFrame *currentFrame = self.skView.session.currentFrame;
-//
-//        if (currentFrame)
-//        {
-//            // 使用相机的位姿信息来确定节点的位姿
-//            matrix_float4x4 translation = matrix_identity_float4x4;
-//            translation.columns[3].z  = -0.3;
-//
-//            matrix_float4x4 transform = matrix_multiply(currentFrame.camera.transform, translation);
-//
-//            // 新建锚点添加到场景中
-//            ARAnchor *anchor = [[ARAnchor alloc] initWithTransform:transform];
-//            [self.skView.session addAnchor:anchor];
-//        }
-//    }
 }
 
-//- (nullable SCNNode *)renderer:(id <SCNSceneRenderer>)renderer nodeForAnchor:(ARAnchor *)anchor {
-//    return nil;
-//}
+- (SCNNode *)renderer:(id<SCNSceneRenderer>)renderer nodeForAnchor:(ARAnchor *)anchor {
+    if ([anchor isKindOfClass:[ARImageAnchor class]]) {
+        ARReferenceImage *referenceImage = [(ARImageAnchor *)anchor referenceImage];
+        if ([referenceImage.name isEqualToString:@"lcw"] || [referenceImage.name isEqualToString:@"yd"]) {
+            CBMovie *movie = [[CBMovie alloc] init];
+            movie.score = 7;
+            movie.wishNum = @"2354234";
+            movie.ticket = @"60元";
+            movie.desStr = @"123阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或阿萨德法师法师法师打发士大夫撒旦法师法师的法师打发斯蒂芬阿斯顿发送到发送到吧是；劳动法卡水电费离开；阿斯蒂芬静安寺达拉斯的发票是打飞机啊十字路口；的GV阿半年还是东风路卡士大夫；阿萨德了开发商拿到发卡拉收件人爱哦委托方嘎婆is多个或";
+            movie.realBox = @"15亿";
+            movie.rightTopImg = [UIImage imageNamed:@"rightTop.jpg"];
+            movie.rightBottomImg = [UIImage imageNamed:@"rightBottom.jpg"];
+            CBMovieNode *movieNode = [[CBMovieNode alloc] initWithMovie:movie];
+            movieNode.curVC = self;
+            return movieNode;
+        }
+    }
+    return nil;
+}
 
 - (void)renderer:(id<SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
     
@@ -137,7 +122,7 @@
 //        [tempNode runAction:[SCNAction fadeOpacityTo:1 duration:0.5]];
         
         
-        [node addChildNode:[CBMovieDetailNode new]];
+//        [node addChildNode:[CBMovieDetailNode new]];
     }
 }
 

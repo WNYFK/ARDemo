@@ -13,6 +13,7 @@
 #import "ARImageViewController.h"
 #import "SceneKitViewController.h"
 #import "TestViewController.h"
+#import "SceneTestViewController.h"
 
 @interface AppDelegate ()
 
