@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3707E6E120EDE23900177FC7 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3707E6E020EDE23900177FC7 /* texture.png */; };
+		3707E6E320EDE42600177FC7 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3707E6E220EDE42600177FC7 /* ship.scn */; };
+		373B37ED20EF49A7007DC602 /* CBTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 373B37EC20EF49A7007DC602 /* CBTextNode.m */; };
+		373B37EF20EF4A54007DC602 /* my_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 373B37EE20EF4A54007DC602 /* my_logo.png */; };
+		373B37F220EF5015007DC602 /* CBChangeAngleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373B37F120EF5015007DC602 /* CBChangeAngleViewController.m */; };
 		373D89E520E23C4800CB3165 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 373D89E420E23C4800CB3165 /* AppDelegate.m */; };
 		373D89E820E23C4800CB3165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373D89E720E23C4800CB3165 /* ViewController.m */; };
 		373D89ED20E23C4900CB3165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373D89EC20E23C4900CB3165 /* Assets.xcassets */; };
@@ -23,6 +28,8 @@
 		37ADCE1A20EB17A10019C8FD /* CBMovieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ADCE1920EB17A10019C8FD /* CBMovieNode.m */; };
 		37ADCE1D20EB26020019C8FD /* CBPlaneNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ADCE1C20EB26020019C8FD /* CBPlaneNode.m */; };
 		37ADCE2020EB557C0019C8FD /* SceneTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ADCE1F20EB557C0019C8FD /* SceneTestViewController.m */; };
+		37B20FAE20EDFBA10046DF40 /* earth-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37B20FAD20EDFBA10046DF40 /* earth-diffuse.jpg */; };
+		37B20FB120EE0DB20046DF40 /* CBStartNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B20FB020EE0DB20046DF40 /* CBStartNode.m */; };
 		37D688FC20EB6B9900C26D2A /* rightBottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37D688FA20EB6B9800C26D2A /* rightBottom.jpg */; };
 		37D688FD20EB6B9900C26D2A /* rightTop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37D688FB20EB6B9900C26D2A /* rightTop.jpg */; };
 		37E1601520E89F270082CE87 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1601420E89F270082CE87 /* TestViewController.m */; };
@@ -34,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3707E6E020EDE23900177FC7 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		3707E6E220EDE42600177FC7 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
+		373B37EB20EF49A7007DC602 /* CBTextNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBTextNode.h; sourceTree = "<group>"; };
+		373B37EC20EF49A7007DC602 /* CBTextNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBTextNode.m; sourceTree = "<group>"; };
+		373B37EE20EF4A54007DC602 /* my_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_logo.png; sourceTree = "<group>"; };
+		373B37F020EF5015007DC602 /* CBChangeAngleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBChangeAngleViewController.h; sourceTree = "<group>"; };
+		373B37F120EF5015007DC602 /* CBChangeAngleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBChangeAngleViewController.m; sourceTree = "<group>"; };
 		373D89E020E23C4800CB3165 /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		373D89E320E23C4800CB3165 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		373D89E420E23C4800CB3165 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +77,9 @@
 		37ADCE1C20EB26020019C8FD /* CBPlaneNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBPlaneNode.m; sourceTree = "<group>"; };
 		37ADCE1E20EB557C0019C8FD /* SceneTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneTestViewController.h; sourceTree = "<group>"; };
 		37ADCE1F20EB557C0019C8FD /* SceneTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneTestViewController.m; sourceTree = "<group>"; };
+		37B20FAD20EDFBA10046DF40 /* earth-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-diffuse.jpg"; sourceTree = "<group>"; };
+		37B20FAF20EE0DB20046DF40 /* CBStartNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBStartNode.h; sourceTree = "<group>"; };
+		37B20FB020EE0DB20046DF40 /* CBStartNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBStartNode.m; sourceTree = "<group>"; };
 		37D688FA20EB6B9800C26D2A /* rightBottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightBottom.jpg; sourceTree = "<group>"; };
 		37D688FB20EB6B9900C26D2A /* rightTop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightTop.jpg; sourceTree = "<group>"; };
 		37E1601320E89F270082CE87 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -93,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				373D8A0620E5DB5300CB3165 /* scene.scn */,
+				3707E6E220EDE42600177FC7 /* ship.scn */,
 				373D89E220E23C4800CB3165 /* ARDemo */,
 				373D89E120E23C4800CB3165 /* Products */,
 			);
@@ -113,7 +131,9 @@
 				37ADCE1320EA0FD90019C8FD /* UIView+DHSmartScreenshot.m */,
 				373D8A0820E5DBCE00CB3165 /* materals.png */,
 				37D688FA20EB6B9800C26D2A /* rightBottom.jpg */,
+				37B20FAD20EDFBA10046DF40 /* earth-diffuse.jpg */,
 				37D688FB20EB6B9900C26D2A /* rightTop.jpg */,
+				373B37EE20EF4A54007DC602 /* my_logo.png */,
 				373D89E320E23C4800CB3165 /* AppDelegate.h */,
 				373D89E420E23C4800CB3165 /* AppDelegate.m */,
 				37F7E96420E76A790028B451 /* CBAction.h */,
@@ -130,12 +150,18 @@
 				37ADCE1F20EB557C0019C8FD /* SceneTestViewController.m */,
 				37ADCE1820EB17A10019C8FD /* CBMovieNode.h */,
 				37ADCE1920EB17A10019C8FD /* CBMovieNode.m */,
+				373B37EB20EF49A7007DC602 /* CBTextNode.h */,
+				373B37EC20EF49A7007DC602 /* CBTextNode.m */,
+				37B20FAF20EE0DB20046DF40 /* CBStartNode.h */,
+				37B20FB020EE0DB20046DF40 /* CBStartNode.m */,
 				37ADCE1B20EB26020019C8FD /* CBPlaneNode.h */,
 				37ADCE1C20EB26020019C8FD /* CBPlaneNode.m */,
 				37F7E96D20E7BB500028B451 /* VideoPlayer.h */,
 				37F7E96E20E7BB500028B451 /* VideoPlayer.m */,
 				37F7E96120E76A2A0028B451 /* SceneKitViewController.h */,
 				37F7E96220E76A2A0028B451 /* SceneKitViewController.m */,
+				373B37F020EF5015007DC602 /* CBChangeAngleViewController.h */,
+				373B37F120EF5015007DC602 /* CBChangeAngleViewController.m */,
 				37F7E96720E76D770028B451 /* PlaneViewController.h */,
 				37F7E96820E76D770028B451 /* PlaneViewController.m */,
 				373D8A0120E5D50300CB3165 /* PlaneNode.h */,
@@ -149,6 +175,7 @@
 				37F7E97020E7BE040028B451 /* freeVideo.mp4 */,
 				37E1601320E89F270082CE87 /* TestViewController.h */,
 				37E1601420E89F270082CE87 /* TestViewController.m */,
+				3707E6E020EDE23900177FC7 /* texture.png */,
 			);
 			path = ARDemo;
 			sourceTree = "<group>";
@@ -212,11 +239,15 @@
 			files = (
 				373D8A0920E5DBCE00CB3165 /* materals.png in Resources */,
 				37D688FC20EB6B9900C26D2A /* rightBottom.jpg in Resources */,
+				3707E6E320EDE42600177FC7 /* ship.scn in Resources */,
 				37F7E97120E7BE040028B451 /* freeVideo.mp4 in Resources */,
 				373D89F020E23C4900CB3165 /* LaunchScreen.storyboard in Resources */,
 				373D8A0720E5DB5300CB3165 /* scene.scn in Resources */,
 				373D89ED20E23C4900CB3165 /* Assets.xcassets in Resources */,
+				37B20FAE20EDFBA10046DF40 /* earth-diffuse.jpg in Resources */,
+				373B37EF20EF4A54007DC602 /* my_logo.png in Resources */,
 				37D688FD20EB6B9900C26D2A /* rightTop.jpg in Resources */,
+				3707E6E120EDE23900177FC7 /* texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,15 +264,18 @@
 				37E1601520E89F270082CE87 /* TestViewController.m in Sources */,
 				37F7E96620E76A790028B451 /* CBAction.m in Sources */,
 				37ADCE1420EA0FD90019C8FD /* UIView+DHSmartScreenshot.m in Sources */,
+				373B37ED20EF49A7007DC602 /* CBTextNode.m in Sources */,
 				373D89E520E23C4800CB3165 /* AppDelegate.m in Sources */,
 				37ADCE1D20EB26020019C8FD /* CBPlaneNode.m in Sources */,
 				373D89FE20E23F5F00CB3165 /* UIView+Addtion.m in Sources */,
 				373D8A0320E5D50300CB3165 /* PlaneNode.m in Sources */,
 				373D89FB20E23CE300CB3165 /* FirstViewController.m in Sources */,
 				37F7E96920E76D770028B451 /* PlaneViewController.m in Sources */,
+				373B37F220EF5015007DC602 /* CBChangeAngleViewController.m in Sources */,
 				373D8A0C20E5DD0B00CB3165 /* SpriteViewController.m in Sources */,
 				373D8A1120E6099E00CB3165 /* ARImageViewController.m in Sources */,
 				37F7E96F20E7BB500028B451 /* VideoPlayer.m in Sources */,
+				37B20FB120EE0DB20046DF40 /* CBStartNode.m in Sources */,
 				37F7E96320E76A2A0028B451 /* SceneKitViewController.m in Sources */,
 				37ADCE1A20EB17A10019C8FD /* CBMovieNode.m in Sources */,
 			);

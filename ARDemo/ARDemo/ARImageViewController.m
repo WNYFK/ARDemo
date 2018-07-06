@@ -12,6 +12,7 @@
 #import "UIView+DHSmartScreenshot.h"
 #import "CBMovieNode.h"
 #import "CBPlaneNode.h"
+#import <math.h>
 
 @interface ARImageViewController ()<ARSCNViewDelegate>
 
@@ -24,23 +25,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.scnView = [[ARSCNView alloc] initWithFrame:self.view.bounds];
+    self.scnView = [[ARSCNView alloc] initWithFrame:self.view.bounds options:@{SCNPreferLowPowerDeviceKey: @(YES)}];
+//    self.scnView = [[ARSCNView alloc] initWithFrame:self.view.bounds];
     self.scnView.delegate = self;
+    self.scnView.showsStatistics = YES;
+    self.scnView.preferredFramesPerSecond = 30;
+    self.scnView.antialiasingMode = SCNAntialiasingModeMultisampling4X;
     [self.view addSubview:self.scnView];
     self.scnView.scene = [SCNScene new];
-    
+//    self.scnView.allowsCameraControl = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     ARWorldTrackingConfiguration *config = [ARWorldTrackingConfiguration new];
-//    config.detectionImages = [ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
     config.detectionImages = [ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
+//    config.detectionImages = [ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
 //    config.maximumNumberOfTrackedImages = 1;
 //
-//    ARImageTrackingConfiguration *imgConfig = [ARImageTrackingConfiguration new];
-//    imgConfig.trackingImages = config.detectionImages;
-//    imgConfig.maximumNumberOfTrackedImages = 1;
+//    ARImageTrackingConfiguration *config = [ARImageTrackingConfiguration new];
+//    config.trackingImages = [ARReferenceImage referenceImagesInGroupNamed:@"AR Resources" bundle:nil];
+//    config.maximumNumberOfTrackedImages = 1;
 
     [self.scnView.session runWithConfiguration:config options:ARSessionRunOptionResetTracking | ARSessionRunOptionRemoveExistingAnchors];
 }
@@ -67,7 +72,10 @@
         // 拿到命中测试结果，取出位置
         SCNHitTestResult *result = [resultArray firstObject];
         if ([result.node isKindOfClass:[CBPlaneNode class]]) {
-            ((CBPlaneNode *)result.node).callback();
+            CBPlaneNode *planeNode = (CBPlaneNode *)result.node;
+            if (planeNode.callback) {
+                planeNode.callback();
+            }
         }
     }
 }
@@ -134,6 +142,7 @@
 
 - (void)renderer:(id <SCNSceneRenderer>)renderer didUpdateNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
     NSLog(@"didupdate");
+    
 }
 
 - (void)renderer:(id<SCNSceneRenderer>)renderer didRemoveNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
