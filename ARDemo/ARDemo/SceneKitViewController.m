@@ -9,6 +9,7 @@
 #import "SceneKitViewController.h"
 #import "CBAction.h"
 #import "PlaneViewController.h"
+#import "ParticleSystemViewController.h"
 
 @interface SceneKitViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -33,6 +34,10 @@
     //plane
     [self.dataArr addObject:[CBAction actionWithTitle:@"SCNPlane" callback:^{
         [self.navigationController pushViewController:[PlaneViewController new] animated:YES];
+    }]];
+    //粒子系统
+    [self.dataArr addObject:[CBAction actionWithTitle:@"粒子系统" callback:^{
+        [self.navigationController pushViewController:[ParticleSystemViewController new] animated:YES];
     }]];
     
 }

@@ -33,6 +33,9 @@
 		37D688FC20EB6B9900C26D2A /* rightBottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37D688FA20EB6B9800C26D2A /* rightBottom.jpg */; };
 		37D688FD20EB6B9900C26D2A /* rightTop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37D688FB20EB6B9900C26D2A /* rightTop.jpg */; };
 		37E1601520E89F270082CE87 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1601420E89F270082CE87 /* TestViewController.m */; };
+		37E1601820F0C1F50082CE87 /* ParticleSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1601720F0C1F50082CE87 /* ParticleSystemViewController.m */; };
+		37E1601B20F0C3450082CE87 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E1601920F0C3450082CE87 /* spark.png */; };
+		37E1601C20F0C3450082CE87 /* fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 37E1601A20F0C3450082CE87 /* fire.scnp */; };
 		37F7E96320E76A2A0028B451 /* SceneKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96220E76A2A0028B451 /* SceneKitViewController.m */; };
 		37F7E96620E76A790028B451 /* CBAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96520E76A790028B451 /* CBAction.m */; };
 		37F7E96920E76D770028B451 /* PlaneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F7E96820E76D770028B451 /* PlaneViewController.m */; };
@@ -84,6 +87,10 @@
 		37D688FB20EB6B9900C26D2A /* rightTop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightTop.jpg; sourceTree = "<group>"; };
 		37E1601320E89F270082CE87 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		37E1601420E89F270082CE87 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		37E1601620F0C1F50082CE87 /* ParticleSystemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleSystemViewController.h; sourceTree = "<group>"; };
+		37E1601720F0C1F50082CE87 /* ParticleSystemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleSystemViewController.m; sourceTree = "<group>"; };
+		37E1601920F0C3450082CE87 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		37E1601A20F0C3450082CE87 /* fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = fire.scnp; sourceTree = "<group>"; };
 		37F7E96120E76A2A0028B451 /* SceneKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneKitViewController.h; sourceTree = "<group>"; };
 		37F7E96220E76A2A0028B451 /* SceneKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneKitViewController.m; sourceTree = "<group>"; };
 		37F7E96420E76A790028B451 /* CBAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAction.h; sourceTree = "<group>"; };
@@ -160,6 +167,10 @@
 				37F7E96E20E7BB500028B451 /* VideoPlayer.m */,
 				37F7E96120E76A2A0028B451 /* SceneKitViewController.h */,
 				37F7E96220E76A2A0028B451 /* SceneKitViewController.m */,
+				37E1601620F0C1F50082CE87 /* ParticleSystemViewController.h */,
+				37E1601720F0C1F50082CE87 /* ParticleSystemViewController.m */,
+				37E1601920F0C3450082CE87 /* spark.png */,
+				37E1601A20F0C3450082CE87 /* fire.scnp */,
 				373B37F020EF5015007DC602 /* CBChangeAngleViewController.h */,
 				373B37F120EF5015007DC602 /* CBChangeAngleViewController.m */,
 				37F7E96720E76D770028B451 /* PlaneViewController.h */,
@@ -238,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				373D8A0920E5DBCE00CB3165 /* materals.png in Resources */,
+				37E1601B20F0C3450082CE87 /* spark.png in Resources */,
 				37D688FC20EB6B9900C26D2A /* rightBottom.jpg in Resources */,
 				3707E6E320EDE42600177FC7 /* ship.scn in Resources */,
 				37F7E97120E7BE040028B451 /* freeVideo.mp4 in Resources */,
@@ -247,6 +259,7 @@
 				37B20FAE20EDFBA10046DF40 /* earth-diffuse.jpg in Resources */,
 				373B37EF20EF4A54007DC602 /* my_logo.png in Resources */,
 				37D688FD20EB6B9900C26D2A /* rightTop.jpg in Resources */,
+				37E1601C20F0C3450082CE87 /* fire.scnp in Resources */,
 				3707E6E120EDE23900177FC7 /* texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +280,7 @@
 				373B37ED20EF49A7007DC602 /* CBTextNode.m in Sources */,
 				373D89E520E23C4800CB3165 /* AppDelegate.m in Sources */,
 				37ADCE1D20EB26020019C8FD /* CBPlaneNode.m in Sources */,
+				37E1601820F0C1F50082CE87 /* ParticleSystemViewController.m in Sources */,
 				373D89FE20E23F5F00CB3165 /* UIView+Addtion.m in Sources */,
 				373D8A0320E5D50300CB3165 /* PlaneNode.m in Sources */,
 				373D89FB20E23CE300CB3165 /* FirstViewController.m in Sources */,
